@@ -8,11 +8,11 @@ require '../GDCanvas.php';
 
 // Creating an avatar image
 $avatar_image = new GDImage();
-$avatar_image->load('http://www.gravatar.com/avatar/a4b15506108e1cf337adccce77602d51?s=100.png');
+$avatar_image->load('http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=100.jpg');
 $avatar_image->setTop(60);
 $avatar_image->setLeft(70);
 
-$about_text = new GDText(strtoupper("I'm a front/back developer, linux lover and rock and roll fan."));
+$about_text = new GDText(strtoupper("MY AWESOME PRESENTATION CARD GENERATED WITH GDIMAGE"));
 $about_text->setSize(16);
 $about_text->setWidth(300);
 $about_text->setLeft(210);
@@ -20,7 +20,7 @@ $about_text->setTop(75);
 $about_text->setColor(204, 164, 116);
 $about_text->setFontface('fonts/Lato-Lig.ttf');
 
-$twitter_text = new GDText('@joseluis_q');
+$twitter_text = new GDText('@myname');
 $twitter_text->setSize(11);
 $twitter_text->setWidth(70);
 $twitter_text->setLeft(450);
