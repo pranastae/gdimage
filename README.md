@@ -1,3 +1,5 @@
-# GDIMAGE [![Build Status](https://api.travis-ci.org/joseluisq/gdimage.png?branch=master)](http://travis-ci.org/joseluisq/gdimage)
+# GDImage
 
 A simple extended GD library for easy image handling.
+
+View details on http://joseluisq.github.io/gdimage/
