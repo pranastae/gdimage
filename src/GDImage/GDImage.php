@@ -113,6 +113,7 @@ class GDImage {
                     $this->_extension = GDUtils::getExtension($filename);
                     $this->_width = $this->_box_width = imagesx($image);
                     $this->_height = $this->_box_height = imagesy($image);
+                    $loaded = TRUE;
                 }
             } else {
                 if (is_file($filename)) {
@@ -132,6 +133,7 @@ class GDImage {
                             break;
                     }
 
+                    $loaded = TRUE;
                     $this->_resource = $image;
                     $this->_width = $this->_box_width = imagesx($image);
                     $this->_height = $this->_box_height = imagesy($image);
@@ -468,19 +470,19 @@ class GDImage {
      * Saves the image to specific path.
      * @access public
      * @param string $filename If it's null save function will save the image in load path for default.
-     * @return void
+     * @return bool True if it is saved successful and False if it is not saved.
      */
     public function save($filename = NULL) {
-        $this->render($filename);
+        return $this->render($filename);
     }
 
     /**
      * Outputs the image on browser.
      * @access public
-     * @return void
+     * @return bool 
      */
     public function output() {
-        $this->render(NULL, TRUE);
+        return $this->render(NULL, TRUE);
     }
 
     /**
@@ -618,7 +620,7 @@ class GDImage {
      * @access private
      * @param string $filename [Optional] Path to save image
      * @param bool $output [Optional] If it's true render function outputs image.
-     * @return void
+     * @return bool True if it has worked successful and False if it has not.
      */
     private function render($filename = NULL, $output = FALSE) {
         $saved = FALSE;

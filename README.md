@@ -1,4 +1,5 @@
-# GDImage
+GDImage
+====
 
 GDImage is a simple extended library based on PHP Image Processing and GD for easy image handling.
 With GDImage you can read, handle, create and save your images easy.
