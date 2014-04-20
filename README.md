@@ -1,4 +1,4 @@
-GDImage
+GDImage [![Build Status](https://travis-ci.org/joseluisq/gdimage.svg?branch=master)](https://travis-ci.org/joseluisq/gdimage)
 ====
 
 GDImage is a simple extended library based on PHP Image Processing and GD for easy image handling.
