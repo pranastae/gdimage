@@ -4,9 +4,9 @@
  * A Text class to embed string into Canvas.
  * @package GDImage
  * @access public
- * @version 1.0
+ * @version 1.0.0
  * @author Jose Luis Quintana <joseluisquintana20@gmail.com>
- * @license http://www.lbnstudio.fr/license.txt
+ * @license http://joseluisquintana.pe/license.txt
  * @property string $_string String text.
  * @property string $_fontface Font face .ttf filename.
  * @property int $_angle Angle for the text.

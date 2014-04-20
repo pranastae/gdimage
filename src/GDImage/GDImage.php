@@ -4,9 +4,9 @@
  * A simple extended GD class for easy image handling. This is the parent class for GDFigure and GDCanvas.
  * @package GDImage
  * @access public
- * @version 1.0
+ * @version 1.0.0
  * @author Jose Luis Quintana <joseluisquintana20@gmail.com>
- * @license http://www.lbnstudio.fr/license.txt
+ * @license http://joseluisquintana.pe/license.txt
  * @property string $_name
  * @property string $_filename
  * @property int $_width

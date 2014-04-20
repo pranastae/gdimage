@@ -4,9 +4,9 @@
  * A Canvas represents a rectangular image area on which one can draw images.
  * @package GDImage
  * @access public
- * @version 1.0
+ * @version 1.0.0
  * @author Jose Luis Quintana <joseluisquintana20@gmail.com>
- * @license http://www.lbnstudio.fr/license.txt
+ * @license http://joseluisquintana.pe/license.txt
  * @property array $_list An array of elements classes (GDImage, GDFigure or GDText classes)
  * @link Github https://github.com/joseluisq/gdimage
  */

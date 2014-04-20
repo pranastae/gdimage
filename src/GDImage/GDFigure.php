@@ -4,9 +4,9 @@
  * A Figure class to embed simple graphic into the Canvas, a Figure can be a Canvas too.
  * @package GDImage
  * @access public
- * @version 1.0
+ * @version 1.0.0
  * @author Jose Luis Quintana <joseluisquintana20@gmail.com>
- * @license http://www.lbnstudio.fr/license.txt
+ * @license http://joseluisquintana.pe/license.txt
  * @property int $r Red color
  * @property int $g Green color
  * @property int $b Blue color

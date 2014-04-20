@@ -4,9 +4,9 @@
  * Some utils image functions.
  * @package GDImage
  * @access public
- * @version 1.0
+ * @version 1.0.0
  * @author Jose Luis Quintana <joseluisquintana20@gmail.com>
- * @license http://www.lbnstudio.fr/license.txt
+ * @license http://joseluisquintana.pe/license.txt
  * @property array $_mimetypes Mime types for images.
  * @property array $_typesimages Images types IMAGETYPE_GIF, IMAGETYPE_PNG and IMAGETYPE_JPEG.
  * @link Github https://github.com/joseluisq/gdimage
