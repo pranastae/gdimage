@@ -3,7 +3,7 @@ GDImage [![Build Status](https://travis-ci.org/joseluisq/gdimage.svg?branch=mast
 
 GDImage is a simple extended library based on PHP Image Processing and GD for easy image handling.
 With GDImage you can read, handle, create and save your images easy.
-GDImage runs over PHP 5.2 or higher and requires PHP GD library.
+GDImage runs over PHP 5.3 or higher and requires PHP GD library.
 
 Example: A simple presentation card with GDImage
 
