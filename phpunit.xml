@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit bootstrap="src/autoload.php" strict="true" verbose="true" colors="true">
+<phpunit bootstrap="src/autoload.php" colors="true">
     <testsuites>
         <testsuite name="GDImage">
             <directory>./tests</directory>
