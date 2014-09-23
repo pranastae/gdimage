@@ -4,7 +4,7 @@
  * A Text class to embed string into Canvas.
  * @package GDImage
  * @access public
- * @version 1.0
+ * @version 1.1
  * @author Jose Luis Quintana <joseluisquintana20@gmail.com>
  * @license http://www.lbnstudio.fr/license.txt
  * @property string $_string String text.
@@ -118,7 +118,7 @@ class GDText {
     /**
      * Sets top position.
      * @access public
-     * @param int $x position
+     * @param int $y position
      * @return void
      */
     public function setTop($y) {

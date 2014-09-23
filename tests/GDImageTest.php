@@ -3,7 +3,7 @@
 /**
  * PHPUnit / GDImage Test Class
  * @package GDImage
- * @version 1.0
+ * @version 1.1
  * @author Jose Luis Quintana <joseluisquintana20@gmail.com>
  * @license http://www.lbnstudio.fr/license.txt
  */
@@ -70,6 +70,26 @@ class GDImageTest extends PHPUnit_Framework_TestCase {
     public function testScale(GDImage $img) {
         // Scaling to 50% (100x100)
         $img->scale(50);
+
+        return $img;
+    }
+
+    /**
+     * @depends testLoad
+     */
+    public function testCenterCrop(GDImage $img) {
+        // Center and croping to 100px
+        $img->centerCrop(100, 100);
+
+        return $img;
+    }
+
+    /**
+     * @depends testLoad
+     */
+    public function testRotate(GDImage $img) {
+        // Rotating to 180º
+        $img->rotate(180);
 
         return $img;
     }

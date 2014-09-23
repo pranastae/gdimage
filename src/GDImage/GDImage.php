@@ -4,7 +4,7 @@
  * A simple extended GD class for easy image handling. This is the parent class for GDFigure and GDCanvas.
  * @package GDImage
  * @access public
- * @version 1.0
+ * @version 1.1
  * @author Jose Luis Quintana <joseluisquintana20@gmail.com>
  * @license http://www.lbnstudio.fr/license.txt
  * @property string $_name
@@ -539,6 +539,16 @@ class GDImage {
         $width = $this->_width * (int) $scale / 100;
         $height = $this->_height * (int) $scale / 100;
         $this->resize($width, $height);
+    }
+
+    /**
+     * Rotate an image with a given angle.
+     * @access public
+     * @param int $angle
+     * @return void
+     */
+    public function rotate($angle = 0) {
+        $this->_resource = imagerotate($this->_resource, $angle, 0);
     }
 
     /**

@@ -1,10 +1,10 @@
 <?php
 
-require '../GDUtils.php';
-require '../GDImage.php';
-require '../GDFigure.php';
-require '../GDText.php';
-require '../GDCanvas.php';
+require '../src/GDImage/GDUtils.php';
+require '../src/GDImage/GDImage.php';
+require '../src/GDImage/GDFigure.php';
+require '../src/GDImage/GDText.php';
+require '../src/GDImage/GDCanvas.php';
 
 // Creating an avatar image
 $avatar_image = new GDImage();
@@ -12,7 +12,7 @@ $avatar_image->load('http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c0
 $avatar_image->setTop(60);
 $avatar_image->setLeft(70);
 
-$about_text = new GDText(strtoupper("MY AWESOME PRESENTATION CARD GENERATED WITH GDIMAGE"));
+$about_text = new GDText("MY AWESOME PRESENTATION CARD GENERATED WITH GDIMAGE");
 $about_text->setSize(16);
 $about_text->setWidth(300);
 $about_text->setLeft(210);
