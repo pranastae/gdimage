@@ -30,5 +30,4 @@ This project is in the first version, of course it's not perfect, so that if you
 * [Pull requests](https://github.com/joseluisq/gdimage/pulls) on github
 
 ## License
-Copyright 2013 Jose Luis Quintana - joseluisquintana.pe<br>
 Licensed under the [MIT License](http://opensource.org/licenses/MIT)
