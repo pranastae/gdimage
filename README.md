@@ -1,4 +1,4 @@
-GDImage [![Build Status](https://travis-ci.org/joseluisq/gdimage.svg?branch=master)](https://travis-ci.org/joseluisq/gdimage)
+GDImage [![Build Status](http://img.shields.io/travis/joseluisq/gdimage.svg?style=flat-square)](https://travis-ci.org/joseluisq/gdimage)
 ====
 
 [GDImage](http://joseluisq.github.io/gdimage/) is a simple extended library based on [PHP Image Processing and GD](http://php.net/manual/en/book.image.php) for easy image handling. 
