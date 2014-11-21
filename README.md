@@ -31,3 +31,7 @@ This project is in the first version, of course it's not perfect, so that if you
 
 ## License
 Licensed under the [MIT License](http://opensource.org/licenses/MIT)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/joseluisq/gdimage/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
