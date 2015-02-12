@@ -18,7 +18,7 @@ class GDCanvas extends GDImage {
      * Constructs a new Canvas.
      * @param mixed $element Only GDImage or GDFigure class
      * @access public
-     * @return void 
+     * @return void
      */
     function __construct($element = NULL) {
         parent::__construct($element);
@@ -61,10 +61,24 @@ class GDCanvas extends GDImage {
                     if ($element instanceof GDText) {
                         $rgb_color = $element->getColor();
                         $color = imagecolorallocatealpha($canvas, $rgb_color[0], $rgb_color[1], $rgb_color[2], $element->getOpacity());
+
                         $element->wrappText();
 
                         $coordinates = $element->calculateTextBox($element->getSize(), $element->getAngle(), $element->getFontface(), $element->getString());
-                        imagettftext($canvas, $element->getSize(), $element->getAngle(), $coordinates['left'] + $element->getLeft(), $element->getTop() + $coordinates['top'], $color, $element->getFontface(), $element->getString());
+
+                        // Alignment
+                        $x = $coordinates['left'] + $element->getLeft();
+                        $y = $element->getTop() + $coordinates['top'];
+
+                        if ($element->getAlign() == 'center') {
+                            $x = ($element->getWidth() / 2) - ($coordinates['width'] / 2);
+                        }
+
+                        if ($element->getValign() == 'center') {
+                            $y = ($element->getHeight() / 2) - ($coordinates['height'] / 2);
+                        }
+
+                        imagettftext($canvas, $element->getSize(), $element->getAngle(), $x, $y, $color, $element->getFontface(), $element->getString());
                     }
                 }
             }

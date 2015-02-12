@@ -21,9 +21,12 @@ class GDText {
 
     private $_string = '';
     private $_fontface;
+    private $_align = 'none';
+    private $_valign = 'none';
     private $_angle = 0;
     private $_opacity = 0;
     private $_width = 100;
+    private $_height = 50;
     private $_size = 12;
     private $_x = 0;
     private $_y = 0;
@@ -96,6 +99,26 @@ class GDText {
     }
 
     /**
+     * Sets the horizontal alignment for text.
+     * @access public
+     * @param string $align Values supported: none, center
+     * @return void
+     */
+    public function setAlign($align) {
+        $this->_align = $align;
+    }
+
+    /**
+     * Sets the vertical alignment for text.
+     * @access public
+     * @param string $align Two values supported: none, center
+     * @return void
+     */
+    public function setValign($valign) {
+        $this->_valign = $valign;
+    }
+
+    /**
      * Sets text's angle.
      * @access public
      * @param int $angle Angle
@@ -113,6 +136,16 @@ class GDText {
      */
     public function setWidth($width) {
         $this->_width = $width;
+    }
+
+    /**
+     * Sets box height.
+     * @access public
+     * @param int $height Height
+     * @return void
+     */
+    public function setHeight($height) {
+        $this->_height = $height;
     }
 
     /**
@@ -195,14 +228,14 @@ class GDText {
         $height = ( $max_y - $min_y );
         $left = abs($min_x) + $width;
         $top = abs($min_y) + $height;
-        // to calculate the exact bounding box i write the text in a large image 
+        // to calculate the exact bounding box i write the text in a large image
         $img = @imagecreatetruecolor($width << 2, $height << 2);
         $white = imagecolorallocate($img, 255, 255, 255);
         $black = imagecolorallocate($img, 0, 0, 0);
         imagefilledrectangle($img, 0, 0, imagesx($img), imagesy($img), $black);
-        // for sure the text is completely in the image! 
+        // for sure the text is completely in the image!
         imagettftext($img, $font_size, $font_angle, $left, $top, $white, $font_file, $text);
-        // start scanning (0=> black => empty) 
+        // start scanning (0=> black => empty)
         $rleft = $w4 = $width << 2;
         $rright = 0;
         $rbottom = 0;
@@ -216,7 +249,7 @@ class GDText {
                     $rbottom = max($rbottom, $y);
                 }
 
-        // destroy img and serve the result 
+        // destroy img and serve the result
         imagedestroy($img);
 
         return array(
@@ -276,6 +309,24 @@ class GDText {
     }
 
     /**
+     * Gets the horizontal alignment for text.
+     * @access public
+     * @return string (none, center)
+     */
+    public function getAlign() {
+        return $this->_align;
+    }
+
+    /**
+     * Gets the vertical alignment for text.
+     * @access public
+     * @return string (none, center)
+     */
+    public function getValign() {
+        return $this->_valign;
+    }
+
+    /**
      * Gets angle.
      * @access public
      * @return int
@@ -291,6 +342,15 @@ class GDText {
      */
     public function getWidth() {
         return $this->_width;
+    }
+
+    /**
+     * Gets height.
+     * @access public
+     * @return int
+     */
+    public function getHeight() {
+        return $this->_height;
     }
 
     /**
