@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Rotate an image
+ */
+
 require '../src/GDImage/GDUtils.php';
 require '../src/GDImage/GDImage.php';
 

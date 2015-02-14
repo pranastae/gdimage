@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Creating a Presentation Card
+ */
+
 require '../src/GDImage/GDUtils.php';
 require '../src/GDImage/GDImage.php';
 require '../src/GDImage/GDFigure.php';
@@ -61,14 +65,14 @@ $line_horizontal->create();
 $canvas = new GDCanvas();
 $canvas->from($canvas_figure);
 $canvas->append(array(
-    $line_horizontal,
-    $avatar_box2,
-    $avatar_box3,
-    $avatar_box,
-    $avatar_image,
-    $about_text,
-    $twitter_text,
-    $line_vertical
+  $line_horizontal,
+  $avatar_box2,
+  $avatar_box3,
+  $avatar_box,
+  $avatar_image,
+  $about_text,
+  $twitter_text,
+  $line_vertical
 ));
 $canvas->toPNG();
 $canvas->draw();

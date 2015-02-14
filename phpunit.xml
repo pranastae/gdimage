@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <phpunit bootstrap="src/autoload.php" colors="true">
-    <testsuites>
-        <testsuite name="GDImage">
-            <directory>./tests</directory>
-        </testsuite>
-    </testsuites>
+  <testsuites>
+    <testsuite name="GDImage">
+      <directory>./tests</directory>
+    </testsuite>
+  </testsuites>
 
-    <filter>
-        <whitelist>
-            <directory>./src</directory>
-            <exclude>
-                <directory>./src/autoload.php</directory>
-            </exclude>
-        </whitelist>
-    </filter>
+  <filter>
+    <whitelist>
+      <directory>./src</directory>
+      <exclude>
+        <directory>./src/autoload.php</directory>
+      </exclude>
+    </whitelist>
+  </filter>
 </phpunit>
