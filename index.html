@@ -1,117 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>GDImage: A simple PHP library for easy image handling.</title>
-        <meta name="description" content="GDImage is a simple extended GD library for easy image handling.">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="helpers.css">
-        <link rel="stylesheet" type="text/css" href="main.css">
+  <head>
+    <meta charset="utf-8">
+    <title>GDImage: A simple PHP library for easy image handling.</title>
+    <meta name="description" content="GDImage is a simple extended GD library for easy image handling.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="helpers.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 
-        <script src="js/prefixfree.min.js"></script>
-    </head>
-    <body>
-        <div class="bs-header" id="content">
-            <div class="container">
-                <h1>GDImage</h1>
-                <p>Simple PHP library for easy image handling.</p>
-                <div id="carbonads-container">
-                    <a title="GDImage on GitHub" href="https://github.com/joseluisq/gdimage" target="_blank" class="btn btn-info">View on GitHub</a>
-                </div>
+    <script src="js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <a href="https://github.com/joseluisq/gdimage">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+    </a>
 
-            </div>
+    <div class="bs-header" id="content">
+      <div class="container">
+        <h1>GDImage</h1>
+        <p>Simple PHP library for easy image handling.</p>
+        <div id="carbonads-container">
+          <a title="Download GDImage Library" href="https://github.com/joseluisq/gdimage/archive/v1.0.2.zip" class="btn btn-info">Download v1.0.2</a>
         </div>
 
-        <div id="contents" class="container">
-            <div class="wrap">
-                <h2 id="bower"><a href="#gdmage">AnchorLink</a>GDImage</h2>
+      </div>
+    </div>
 
-                <p>GDImage is a simple extended library based on <a href="http://php.net/manual/en/book.image.php">PHP Image Processing and GD</a> 
-                    for easy image handling. <br>With GDImage you can read, handle, create and save your images easy.</p>
+    <div id="contents" class="container">
+      <div class="wrap">
+        <h2 id="bower"><a href="#gdmage">AnchorLink</a>GDImage</h2>
 
-                <p>GDImage runs with <strong>PHP 5.3</strong> or higher and requires <a href="http://www.php.net/manual/en/book.image.php" target="_blank">PHP GD library.</a></p>
+        <p>GDImage is a simple extended library based on <a href="http://php.net/manual/en/book.image.php">PHP Image Processing and GD</a> 
+          for easy image handling. <br>With GDImage you can read, handle, create and save your images easy.</p>
 
-                <h2 id="installing-bower"><a href="#getting-started">AnchorLink</a> Getting started</h2>
+        <p>GDImage runs with <strong>PHP 5.3</strong> or higher and requires <a href="http://www.php.net/manual/en/book.image.php" target="_blank">PHP GD library.</a></p>
 
-                <p>GDImage Library provides a four classes: GDImage (Parent class), GDFigure, GDText and GDCanvas. <br>
-                
-                <ul>
-                    <li>With GDImage class you can handle some image (JPG, PNG or GIF), for example you can load an image from local or external url, resize and then save in PNG format.</li>
-                    <li>With GDFigure class you can create some figure on solid RGB color.</li>
-                    <li>With GDText class you can create some string text, for example create some text based on your favorite TTF font.</li>
-                    <li>With GDCanvas class you can add several objects for create a unique image. For example you can create a banner with some local or external photos.</li>
-                </ul>
+        <h2 id="installing-bower"><a href="#getting-started">AnchorLink</a> Getting started</h2>
 
-                <h2 id="usage"><a href="#usage">AnchorLink</a>Usage</h2>
+        <p>GDImage Library provides a four classes: GDImage (Parent class), GDFigure, GDText and GDCanvas. <br>
 
-                <h4>Using GDImage</h4>
-                <p>Working with external JPG image and outputting in PNG format.</p>
-                <p><script src="https://gist.github.com/joseluisq/6fde7a498a13417978d4.js"></script></p>
+        <ul>
+          <li>With GDImage class you can handle some image (JPG, PNG or GIF), for example you can load an image from local or external url, resize and then save in PNG format.</li>
+          <li>With GDFigure class you can create some figure on solid RGB color.</li>
+          <li>With GDText class you can create some string text, for example create some text based on your favorite TTF font.</li>
+          <li>With GDCanvas class you can add several objects for create a unique image. For example you can create a banner with some local or external photos.</li>
+        </ul>
 
-                <h4>Using GDFigure</h4>
-                <p>Creating a simple green rectangle.</p>
-                <p><script src="https://gist.github.com/joseluisq/0d20219d1422697bf4c7.js"></script></p>
+        <h2 id="usage"><a href="#usage">AnchorLink</a>Usage</h2>
 
-                <h4>Using GDImage, GDCanvas, GDFigure and GDText classes</h4>
-                <p>Creating a simple presentation card with GDImage, GDCanvas, GDFigure and GDText</p>
-                <p><img src="img/card.jpg" title="Presentation Card Demo" width="550" height="250"></p>
-                <p><script src="https://gist.github.com/joseluisq/6350174.js"></script></p>
+        <h4>Using GDImage</h4>
+        <p>Working with external JPG image and outputting in PNG format.</p>
+        <p><script src="https://gist.github.com/joseluisq/6fde7a498a13417978d4.js"></script></p>
 
-                <h2 id="documentation"><a href="#documentation">AnchorLink</a>Documentation API</h2>
+        <h4>Using GDFigure</h4>
+        <p>Creating a simple green rectangle.</p>
+        <p><script src="https://gist.github.com/joseluisq/0d20219d1422697bf4c7.js"></script></p>
 
-                <p>View The <a href="./docs">Documentation API v1.0.0</a></p>
+        <h4>Using GDImage, GDCanvas, GDFigure and GDText classes</h4>
+        <p>Creating a simple presentation card with GDImage, GDCanvas, GDFigure and GDText</p>
+        <p><img src="img/card.jpg" title="Presentation Card Demo" width="550" height="250"></p>
+        <p><script src="https://gist.github.com/joseluisq/6350174.js"></script></p>
 
-                <h2 id="contributing-to-this-project"><a href="#contributing-to-this-project">AnchorLink</a>Contributing to this project</h2>
-                <p>This project is in the first version, of course it's not perfect, so that if you would like to contribute you will be welcome !</p>
-                
-                <ul>
-                    <li><a href="https://github.com/joseluisq/gdimage/issues">Bug reports</a> on github</li>
-                    <li>Feature requests are welcome. Please before sending some feature requests make sure provide as much detail and context as possible.</li>
-                    <li><a href="https://github.com/joseluisq/gdimage/pulls">Pull requests</a> on github</li>
-                </ul>
+        <h2 id="documentation"><a href="./docs" title="Documentation API">AnchorLink</a>Documentation API</h2>
 
-                <h2 id="contact"><a href="#contact">AnchorLink</a>Contact</h2>
+        <p>View the <a href="./docs" title="Documentation API">documentation API</a></p>
 
-                <p>Have a question?</p>
+        <h2 id="contributing-to-this-project"><a href="#contributing-to-this-project">AnchorLink</a>Contributing to this project</h2>
+        <p>This project is in the first version, of course it's not perfect, so that if you would like to contribute you will be welcome !</p>
 
-                <ul>
-                    <li>On Github <a href="https://github.com/joseluisq">joseluisq</a></li>
-                    <li>On twitter <a href="https://twitter.com/joseluis_q">@joseluis_q</a></li>
-                </ul>
+        <ul>
+          <li><a href="https://github.com/joseluisq/gdimage/issues">Bug reports</a> on github</li>
+          <li>Feature requests are welcome. Please before sending some feature requests make sure provide as much detail and context as possible.</li>
+          <li><a href="https://github.com/joseluisq/gdimage/pulls">Pull requests</a> on github</li>
+        </ul>
+
+        <h2 id="contact"><a href="#contact">AnchorLink</a>Contact</h2>
+
+        <p>Have a question?</p>
+
+        <ul>
+          <li>On Github <a href="https://github.com/joseluisq">joseluisq</a></li>
+          <li>On twitter <a href="https://twitter.com/joseluis_q">@joseluis_q</a></li>
+        </ul>
 
 
-                <h2 id="license"><a href="#license">AnchorLink</a>License</h2>
-                <p>Copyright 2013 Jose Luis Quintana - <a href="https://joseluisquintana.pe">joseluisquintana.pe</a></p>
-                
-                <p>Licensed under the MIT License</p>
-            </div>
-        </div>
+        <h2 id="license"><a href="#license">AnchorLink</a>License</h2>
+        <p class="license">
+          Copyright (c) 2015 Jose Luis Quintana
+        </p>
+        <p class="license">
+          Code licensed under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
 
-        <div id="footer" class="container">
-            <div class="wrap">
-                <p class="license">Code licensed under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    <div id="footer" class="container">
+      <div class="wrap">
 
-            ga('create', 'UA-43556036-1', 'joseluisq.github.io');
-            ga('send', 'pageview');
-        </script>
+      </div>
+    </div>
 
-        <script src="js/jquery-1.10.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-43556036-1', 'joseluisq.github.io');
+      ga('send', 'pageview');
+    </script>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
